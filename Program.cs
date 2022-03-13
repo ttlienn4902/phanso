@@ -4,21 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace mang1chieu
+namespace diem
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int n = new int();
-            int[] a=new int[n];
-            a[].nhap();
-        
-            a[].xuat();
-            a[].sapxep(x);
-            a[].timkiem(e);
-            Console.WriteLine(e);
+            diem diem1 = new diem();
+            diem1.nhap();
+            diem1.xuat();
+            diem diem2 = new diem();
+            diem2.nhap();
+            diem2.xuat();
+            diem diem3 = new diem();
+            diem3.kcach(diem1, diem2);
+           diem3.xuattt();
             Console.ReadLine(); 
+           
+
         }
     }
 }
